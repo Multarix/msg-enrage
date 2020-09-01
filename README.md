@@ -1,12 +1,7 @@
-```
-Support seraph via paypal donations, thanks in advance !
-```
-
-# msg-enrage [![](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=0070BA&colorB=333333)](https://www.paypal.me/seraphinush)
 tera-toolbox module to notify enrage information of bosses
 
 ## Auto-update guide
-- Create a folder called `msg-enrage` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/msg-enrage/master/module.json) << (right-click this link and save link as..) into the folder
+- Create a folder called `msg-enrage-voice` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/multarix/msg-enrage/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Usage
 - __`enrage`__
