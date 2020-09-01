@@ -41,7 +41,8 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
       send(
         `Enrage message : ${settings.enable}`,
         `Countdown : ${settings.countdown}`,
-        `Notice to screen : ${settings.notice}`
+        `Notice to screen : ${settings.notice}`,
+        `Voice : ${settings.voice}`
       );
     },
     'voice': () => {
@@ -81,7 +82,7 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
         enraged = true;
         enrageDuration = e.remainingEnrageTime - (COUNTDOWN * 1000);
         enrageDuration = (enrageDuration < 0) ? 0 : enrageDuration;
-        toChat(`Boss enraged`);
+        toChat(`Boss Enrage Start`);
         if(voice && settings.voice) voice.speak("Enrage Start", 2);
         settings.countdown ? timeout = mod.setTimeout(timeRemaining, enrageDuration) : null;
       } else if (!e.enraged && enraged) {
@@ -89,6 +90,7 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
           return;
         enraged = false;
         send(`Next enrage at ` + `${nextEnrage.toString()}` + `%.`);
+        if(voice && settings.voice) voice.speak("Enrage End", 2);
         clearTimer();
       }
     }
