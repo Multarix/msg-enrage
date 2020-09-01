@@ -2,7 +2,7 @@
   "author": "Seraphinush & TeraProxy (forked by Multarix)",
   "description": "tera-toolbox module to notify enrage information of bosses",
   "disableAutoUpdate": false,
-  "name": "msg-enrage",
+  "name": "msg-enrage-voice",
   "options": {
     "reloadable": true,
     "settingsVersion": 2,
