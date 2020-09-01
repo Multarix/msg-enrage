@@ -45,9 +45,8 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
       );
     },
     'voice': () => {
-      send(
-        settings.voice = !settings.voice;
-        send(`Voice ${settings.voice ? 'en' : 'dis'}abled`);
+      settings.voice = !settings.voice;
+      send(`Voice ${settings.voice ? 'en' : 'dis'}abled`);
       );
     },
     '$default': () => {
