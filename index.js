@@ -47,7 +47,6 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
     'voice': () => {
       settings.voice = !settings.voice;
       send(`Voice ${settings.voice ? 'en' : 'dis'}abled`);
-      );
     },
     '$default': () => {
       send(`Invalid argument. usage : enrage [countdown|notice|status]`);
