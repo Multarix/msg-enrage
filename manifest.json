@@ -1,8 +1,9 @@
 {
   "files": {
-    "README.md": "7ed805d42d3560a2c70d682d75913f0e9fc475452b220e7f74c8ea9c458dbaf9",
-    "index.js": "6372a73e172acaa9cc2dd353529e40a8e01489aabf94eae705bd66d688d449cf",
-    "module.json": "77714f492405d1d9980856fa604b16ce2d559cd67d0db94b58cb1a96be9a7222",
-    "settings.js": "c34b1f7c815dad7a28903af4ad7b6db99f2c468c01f55ab4534c3d915cf5b4af"
+    "README.md": "a111b395b6e87053c72e31d0ca5ec85c6bfa3a2f643f19086f51a524c8604402",
+    "index.js": "73a6dd595f021ee89cbd5d1472e90a046313be07f5c506b37dacd6b8b7ba22ce",
+    "module.json": "58d6d53550efdc5e9e4c89f39a02e85b5bd2a823133e6e77d1ceede78df264e6",
+    "settings.js": "124d033f2ac121c4fccf912537de3146a938447886ac8a01c101b54520e3cf03"
+    "voice/index.js": "5808ae365eb6455fc806c1e345d2f702568f2f5506b857c23fa0358cf1ce8e93"
   }
 }

@@ -2,6 +2,10 @@
 
 const COUNTDOWN = 7;
 const HARROWHOLD = 9950;
+let voice = null;
+
+try { voice = require('./voice') }
+catch(e) { voice = null; }
 
 module.exports.NetworkMod = function MsgEnrage(mod) {
 
@@ -40,6 +44,12 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
         `Notice to screen : ${settings.notice}`
       );
     },
+    'voice': () => {
+      send(
+        settings.voice = !settings.voice;
+        send(`Voice ${settings.voice ? 'en' : 'dis'}abled`);
+      );
+    },
     '$default': () => {
       send(`Invalid argument. usage : enrage [countdown|notice|status]`);
     }
@@ -74,6 +84,7 @@ module.exports.NetworkMod = function MsgEnrage(mod) {
         enrageDuration = e.remainingEnrageTime - (COUNTDOWN * 1000);
         enrageDuration = (enrageDuration < 0) ? 0 : enrageDuration;
         toChat(`Boss enraged`);
+        if(voice && settings.voice) voice.speak("Enrage Start", 2);
         settings.countdown ? timeout = mod.setTimeout(timeRemaining, enrageDuration) : null;
       } else if (!e.enraged && enraged) {
         if (hpPer === 100)

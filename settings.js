@@ -3,7 +3,8 @@
 const DefaultSettings = {
   "enable": true,
   "countdown": true,
-  "notice": false
+  "notice": false,
+  "voice" : false
 };
 
 function MigrateSettings(from_ver, to_ver, settings) {
@@ -16,7 +17,7 @@ function MigrateSettings(from_ver, to_ver, settings) {
       settings = MigrateSettings(from_ver, from_ver + 1, settings);
       return MigrateSettings(from_ver + 1, to_ver, settings);
     }
-  
+
     switch (to_ver) {
       case 2:
         settings.countdown = true;

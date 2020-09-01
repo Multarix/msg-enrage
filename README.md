@@ -18,13 +18,16 @@ tera-toolbox module to notify enrage information of bosses
   - Toggle notice to screen on/off
 - __`status`__
   - Send module status
+- __`voice`__
+  - Turn TTS on or off
 
 ## Info
 - Original author : [TeraProxy](https://github.com/TeraProxy)
 
 ## Changelog
 <details>
-
+    1.2
+    - Added voice option
     1.19
     - Added `countdown` option
     1.18
